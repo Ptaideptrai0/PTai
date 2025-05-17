@@ -1,0 +1,541 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@800&display=swap');
+.be-vietnam-pro-extrabold {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+.h1,h2,h3,h4,h5{
+	font-family: "Be Vietnam Pro", sans-serif;}
+header{
+	width: 100%;height: 170px;
+}
+.menu ul{
+	margin: 0; padding: 0; list-style: none; display: flex
+}
+.menu{
+	padding-top: 18px
+}
+.menu ul li a{
+	padding: 10px 20px; text-decoration: none; font-size: 17px; text-transform: uppercase; color:white; border-radius: 20px
+}
+.menu ul li a:hover{
+	background-color: darkblue; color: white
+}
+/*phan carousel*/
+#slide .owl-dots{ position:absolute; bottom: 10px; left:45%;}
+#slide .owl-dots .owl-dot span {
+      width: 12px;
+      height: 12px; 	
+}
+#slide .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#slide .owl-nav [class*='owl-'] {
+	font-size:60px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: royalblue
+}
+
+#slide .owl-nav .owl-next{ position:absolute; right:5%;}
+#slide .owl-nav .owl-prev{ position:absolute; left:5%;}
+#slide .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color:red;
+      text-decoration: none; }
+aside{
+	width: 100%;min-height: 300px
+}
+main{
+	width: 100%; min-height: 300px
+}
+.text-do{
+	color: royalblue
+}
+aside ul{
+	margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column
+}
+aside ul li{
+	border-bottom: 1px solid #9200FF
+}
+aside ul li a{
+	text-decoration: none; padding: 10px; display: block; color: black
+}
+aside ul li a:hover{
+	background-color: blue; color: white
+}
+.text-center{
+	text-align: center
+}
+footer{
+	width: 100%; min-height: 300px; background-color: deepskyblue
+}
+footer a{
+	text-decoration: none; color: black
+}
+footer a :hover{
+	color: blue
+}
+.bg-xanh{
+	background-color: cornflowerblue
+}
+.bg-xanh ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.bg-xanh ul li a:hover {
+  color: blue;
+  text-decoration: none; /* không gạch chân khi hover */
+}
+/*sss*/
+.property-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.property-card {
+  position: relative;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.property-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.35);
+  text-align: center;
+  padding: 20px;
+}
+
+.overlay h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.label {
+  background-color: #f5e2b5;
+  color: black;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+ .property-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .property-card {
+      position: relative;
+      width: 350px;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .property-card:hover {
+      transform: scale(1.03);
+    }
+
+    .property-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.35);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .overlay h3 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+
+    .label {
+      background-color: #f5e2b5;
+      color: black;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    a.property-card {
+      text-decoration: none;
+      color: inherit;
+    }
+ .section-title {
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .product-card {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #eee;
+      border-radius: 5px;
+    }
+
+    .product-card img {
+      width: 100%;
+      display: block;
+    }
+
+    .discount-tag {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #c2a167;
+      color: #fff;
+      padding: 4px 10px;
+      font-size: 14px;
+    }
+
+    .product-info {
+      padding: 10px 15px;
+    }
+
+    .product-info h4 {
+      font-size: 16px;
+      margin: 5px 0;
+      color: #222;
+    }
+
+    .price {
+      color: red;
+      font-weight: bold;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: #aaa;
+      font-size: 14px;
+      margin-left: 8px;
+    }
+
+    /* Hover overlay */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .product-card:hover .overlay {
+      opacity: 1;
+    }
+
+    .overlay button {
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .see-more {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .see-more button {
+      padding: 10px 25px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+.info-section {
+  background: url('your-background.jpg') no-repeat center center/cover;
+  padding: 60px 0;
+  color: white;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+ width: 100%;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.info-box {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  backdrop-filter: blur(2px);
+}
+
+.info-box .icon {
+  font-size: 30px;
+  margin-bottom: 15px;
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: 15px;
+  border-radius: 10px;
+  transform: rotate(45deg);
+}
+
+.info-box .icon i {
+  transform: rotate(-45deg);
+}
+
+.info-box h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.info-box p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.highlight {
+  background-color: rgba(218, 186, 126, 0.9);
+  color: black;
+}
+/*sss*/
+.featured-products {
+  padding: 50px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.section-title::before,
+.section-title::after {
+  content: ".....................";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.section-title::before {
+  left: 0;
+}
+
+.section-title::after {
+  right: 0;
+}
+
+.products-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  border: 1px solid #eee;
+}
+
+.category-list li {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.category-list li.active {
+  background-color: #ccb17a;
+  color: #fff;
+}
+
+.category-list li i {
+  color: inherit;
+}
+
+/* Grid sản phẩm */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  flex: 1;
+}
+
+.product-card {
+  position: relative;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-card h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.price {
+  color: red;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.old-price {
+  color: #aaa;
+  text-decoration: line-through;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ccb17a;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+/* Hover buttons */
+.hover-card {
+  overflow: hidden;
+}
+
+.hover-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-card:hover .hover-buttons {
+  opacity: 1;
+}
+
+.hover-buttons button {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.hover-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* màu mờ tối */
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.hover-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+.hover-card:hover .hover-overlay,
+.hover-card:hover .hover-buttons {
+  opacity: 1;
+}
+
+.hover-buttons button {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 6px 12px;
+  cursor: pointer;
+}
